@@ -28,7 +28,7 @@ public class POSTtest2 {
     driver.findElement(By.id("login.username")).sendKeys("@@@");
     driver.findElement(By.name("password.main")).sendKeys("45");
     try {
-      assertEquals("Недопустимый логин", driver.findElement(By.cssSelector("div.message-3980010542")).getText());
+      assertEquals("РќРµРґРѕРїСѓСЃС‚РёРјС‹Р№ Р»РѕРіРёРЅ", driver.findElement(By.cssSelector("div.message-3980010542")).getText());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }

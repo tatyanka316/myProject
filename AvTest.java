@@ -26,11 +26,11 @@ public class AvTest {
     driver.get("https://id.rambler.ru/account/registration?referer=https%3A%2F%2Fid.rambler.ru%2Faccount%2Fregistration");
     driver.findElement(By.name("password.main")).click();
     driver.findElement(By.name("password.main")).clear();
-    driver.findElement(By.name("password.main")).sendKeys("ыыыы");
+    driver.findElement(By.name("password.main")).sendKeys("С‹С‹С‹");
     driver.findElement(By.name("password.confirm")).clear();
-    driver.findElement(By.name("password.confirm")).sendKeys("ыыы");
+    driver.findElement(By.name("password.confirm")).sendKeys("С‹С‹С‹");
     try {
-      assertEquals("Вы вводите русские буквы", driver.findElement(By.xpath("//div[@id='root']/div/div/form/div/section/div/div/div[2]")).getText());
+      assertEquals("Р’С‹ РІРІРѕРґРёС‚Рµ СЂСѓСЃСЃРєРёРµ Р±СѓРєРІС‹", driver.findElement(By.xpath("//div[@id='root']/div/div/form/div/section/div/div/div[2]")).getText());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }

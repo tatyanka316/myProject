@@ -26,10 +26,10 @@ public class POSTtest3 {
   public void testPOSTtest3() throws Exception {
     driver.get(baseUrl + "/account/registration?referer=https%3A%2F%2Fid.rambler.ru%2Faccount%2Fregistration");
     driver.findElement(By.id("login.username")).clear();
-    driver.findElement(By.id("login.username")).sendKeys("Иван");
+    driver.findElement(By.id("login.username")).sendKeys("Г€ГўГ Г­");
     driver.findElement(By.name("password.main")).click();
     try {
-      assertEquals("Недопустимый логин", driver.findElement(By.cssSelector("div.message-3980010542")).getText());
+      assertEquals("РќРµРґРѕРїСѓСЃС‚РёРјС‹Р№ Р»РѕРіРёРЅ", driver.findElement(By.cssSelector("div.message-3980010542")).getText());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }

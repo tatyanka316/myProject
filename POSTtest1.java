@@ -30,7 +30,7 @@ public class POSTtest1 {
     driver.findElement(By.name("password.main")).clear();
     driver.findElement(By.name("password.main")).sendKeys("45");
     try {
-      assertEquals("Пользователь уже существует", driver.findElement(By.xpath("//div[@id='root']/div/div/form/section[3]/div/div/div[2]")).getText());
+      assertEquals("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚", driver.findElement(By.xpath("//div[@id='root']/div/div/form/section[3]/div/div/div[2]")).getText());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }

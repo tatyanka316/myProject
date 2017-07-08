@@ -30,7 +30,7 @@ public class AvTest2 {
     driver.findElement(By.name("password.confirm")).clear();
     driver.findElement(By.name("password.confirm")).sendKeys("qwe");
     try {
-      assertEquals("Пароль должен содержать от 6 до 32 символов", driver.findElement(By.xpath("//div[@id='root']/div/div/form/div/section/div/div/div[2]")).getText());
+      assertEquals("РџР°СЂРѕР»СЊ РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ РѕС‚ 6 РґРѕ 32 СЃРёРјРІРѕР»РѕРІ", driver.findElement(By.xpath("//div[@id='root']/div/div/form/div/section/div/div/div[2]")).getText());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }

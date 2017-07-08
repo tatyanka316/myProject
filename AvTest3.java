@@ -31,7 +31,7 @@ public class AvTest3 {
     driver.findElement(By.name("password.confirm")).clear();
     driver.findElement(By.name("password.confirm")).sendKeys(".");
     try {
-    	 assertEquals("exact:—ËÏ‚ÓÎ \">\" ÌÂ ÔÓ‰‰ÂÊË‚‡ÂÚÒˇ. ÃÓÊÌÓ ËÒÔÓÎ¸ÁÓ‚‡Ú¸ ÒËÏ‚ÓÎ˚ ! @ $ % ^ & * ( ) _ - +", driver.findElement(By.xpath("//div[@id='root']/div/div/form/div/section/div/div/div[2]")).getText());
+    	 assertEquals("exact:–°–∏–º–≤–æ–ª ">" –Ω–µ –ø–æ–¥–¥–µ—Ä–∂–∏–≤–∞–µ—Ç—Å—è. –ú–æ–∂–Ω–æ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞—Ç—å —Å–∏–º–≤–æ–ª—ã ! @ $ % ^ & * ( ) _ - +", driver.findElement(By.xpath("//div[@id='root']/div/div/form/div/section/div/div/div[2]")).getText());
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }
